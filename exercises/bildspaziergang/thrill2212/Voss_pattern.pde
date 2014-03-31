@@ -21,10 +21,10 @@ Boolean writepdf = false; // if true the sketch will create a PDF
  * This is Berlin Potsdam boundng box
  *
  */
-// float westlon = 12.9638671875; // the most left point
-// float northlat = 52.70468296296834; // the most top point
-// float southlat = 52.338695481504814; // the most bottom point
-// float eastlon = 13.8153076171875; // the most right point
+ float westlon = 12.9638671875; // the most left point
+ float northlat = 52.70468296296834; // the most top point
+ float southlat = 52.338695481504814; // the most bottom point
+ float eastlon = 13.8153076171875; // the most right point
 /**
  * This is Potsdam bounding box
  * 
@@ -50,10 +50,10 @@ Boolean writepdf = false; // if true the sketch will create a PDF
 
 
 /* Schillerkiez*/
-float northlat = 52.48032342233942; // the most top point
-float westlon = 13.414092063903809; // the most left point
-float southlat = 13.415894508361816; // the most bottom point
-float eastlon = 13.432846069335938; // the most right point
+//float northlat = 52.48032342233942; // the most top point
+//float westlon = 13.414092063903809; // the most left point
+//float southlat = 13.415894508361816; // the most bottom point
+//float eastlon = 13.432846069335938; // the most right point
 
 /* Tempelhofer Feld*/
 //float northlat = 52.482048423737105; // the most top point
@@ -91,7 +91,7 @@ void setup() {
     beginRecord(PDF, "gps_track_01.pdf"); 
   }
 
-  xml = loadXML("david2.gpx"); // this is the file
+  xml = loadXML("bildspaziergang-gpx-data.gpx"); // this is the file
   XML trk = xml.getChild("trk"); // this is a track
   XML trkseg = trk.getChild("trkseg"); // this is a segemt of a track
   // strokeWeight(3);
